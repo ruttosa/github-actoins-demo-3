@@ -1,0 +1,21 @@
+name: Build and Publish Docker Image
+
+on:
+  push:
+      tags:
+        - 'v*'
+
+jobs:
+  build-push-docker-image:
+    name: Build and pusho Docker Image to Amazon ECR
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository Checkout
+        uses: actions/checkout@v4
+      
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests
+        run: npm test
