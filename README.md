@@ -1,13 +1,13 @@
-# notes-app-ci/cd-example
-Simple Node.js application with unit tests to show how to automate tests using Harness CI!
+# notes-app-cicd
+Aplicación Node.js simple con pruebas unitarias para mostrar cómo automatizar la ejecución de pruebas y el despliegue usando Github Actions
 
 ## Prerequisites
-> - Free [Harness cloud](https://www.harness.io/products/continuous-integration?utm_source=internal&utm_medium=social&utm_campaign=devadvocacy&utm_content=pavan_notes_article&utm_term=get-started) account to set up continuous integration 
-> - [Node.js](https://nodejs.org/en/download/) installed 
+> - Cuenta de [Github](https://github.com/) para configurar la integración y despliegue continuo
+> - [Node.js](https://nodejs.org/en/download/) instalado
 
-## Install
+## Instalación
 ```
-git clone https://github.com/pavanbelagatti/notes-app-cicd.git 
+git clone https://github.com/gabvillacis/notes-app-cicd.git
 ```
 ```
 cd notes-app-cicd
@@ -16,14 +16,14 @@ cd notes-app-cicd
 npm install
 ```
 
-## Run
+## Ejecución
 ```
 node app.js
 ```
-Visit http://localhost:3000 in your browser
+Ingresa a http://localhost:3000 en tu navegador
 
 ## Test
-To run tests
+Para ejecutar los tests:
 ```
 npm test
 ```
