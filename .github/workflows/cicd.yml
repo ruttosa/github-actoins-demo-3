@@ -1,0 +1,19 @@
+name: NotesApp CI/CD
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+
+      - name: Instalación de dependencias
+        run: npm i
+
+      - name: Ejecución de pruebas
+        run: npm test
